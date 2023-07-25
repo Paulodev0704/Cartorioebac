@@ -125,6 +125,7 @@ int main(int argc, char const *argv[])
         printf("\t1 - Registrar Nomes\n");
         printf("\t2 - Consultar Nomes\n");
         printf("\t3 - Deletar Nomes\n\n");
+        printf("\t4 - Sair do sistema\n\n");
         printf("Digite uma opcao: "); // fim do menu
 
         scanf("%d", &opcao);
@@ -145,6 +146,11 @@ int main(int argc, char const *argv[])
         case 3:
         deletar();
             break;
+
+        case 4:
+        printf("Obrigado por utilizar o sistema!\n");
+        return 0;
+        break;
 
         default:
         printf("Essa opcao nao esta disponivel\n");
